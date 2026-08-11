@@ -13,7 +13,7 @@ const worlds = [
   },
   {
     id: "02",
-     name: "ETRA GAMING & ANIMATIONS",
+    name: "ETRA GAMING & ANIMATIONS",
     category: "Games • Animation • Interactive Experiences",
     description:
       "Building immersive games, animation, CGI and interactive digital experiences that push imagination beyond limits.",
@@ -33,7 +33,9 @@ export default function UniverseCards() {
           </div>
 
           <p className="universe-intro">
-            Discover ETRA VFX and ETRA Gaming & Animations, where creativity, technology and storytelling come together to build unforgettable digital experiences.
+            Discover ETRA VFX and ETRA Gaming & Animations, where creativity,
+            technology and storytelling come together to build unforgettable
+            digital experiences.
           </p>
         </div>
 
@@ -48,12 +50,14 @@ export default function UniverseCards() {
               aria-label={`Visit ${world.name} website`}
             >
               <div className="world-card-bg" aria-hidden="true" />
-
               <div className="world-card-overlay" aria-hidden="true" />
 
               <div className="world-card-top">
                 <span className="world-number">{world.id}</span>
-                <FiArrowUpRight className="world-arrow" aria-hidden="true" />
+                <FiArrowUpRight
+                  className="world-arrow"
+                  aria-hidden="true"
+                />
               </div>
 
               <div className="world-card-content">
@@ -61,7 +65,9 @@ export default function UniverseCards() {
 
                 <h3>{world.name}</h3>
 
-                <p className="world-description">{world.description}</p>
+                <p className="world-description">
+                  {world.description}
+                </p>
 
                 <span className="world-link">
                   Explore {world.name}

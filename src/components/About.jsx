@@ -72,7 +72,7 @@ export default function About() {
           </div>
 
           <a href="#contact" className="about-link">
-           Let s Build Together
+         Let&apos;s Build Together
             <FiArrowUpRight aria-hidden="true" />
           </a>
         </div>

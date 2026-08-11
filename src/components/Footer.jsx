@@ -9,18 +9,23 @@ export default function Footer() {
     <footer className="site-footer">
       <div className="container footer-inner">
         <div className="footer-top">
-         <a href="#home" className="footer-brand" aria-label="ETRA Dreams home">
-             <Image
-             src="/images/etra-dreams-logo.png"
-             alt="ETRA Dreams"
-             width={220}
-             height={60}
-             className="footer-logo"
-             />
-             </a>
+          <a
+            href="#home"
+            className="footer-brand"
+            aria-label="ETRA Dreams home"
+          >
+            <Image
+              src="/images/etra-dreams-logo.png"
+              alt="ETRA Dreams"
+              width={220}
+              height={60}
+              className="footer-logo"
+            />
+          </a>
 
           <p className="footer-intro">
-            Creating unforgettable digital experiences through visual effects, gaming, animation and creative innovation.
+            Creating unforgettable digital experiences through visual effects,
+            gaming, animation and creative innovation.
           </p>
         </div>
 
@@ -30,7 +35,6 @@ export default function Footer() {
 
             <a href="#home">Home</a>
             <a href="#universe">Our Universe</a>
-           
             <a href="#about">About</a>
             <a href="#contact">Contact</a>
           </div>
@@ -52,7 +56,7 @@ export default function Footer() {
               target="_blank"
               rel="noopener noreferrer"
             >
-            ETRA Gaming & Animations
+              ETRA Gaming &amp; Animations
               <FiArrowUpRight aria-hidden="true" />
             </a>
           </div>

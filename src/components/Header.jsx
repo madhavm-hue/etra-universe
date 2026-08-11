@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import { FiMenu, FiX } from "react-icons/fi";
+import ThemeToggle from "./ThemeToggle";
 import "../styles/header.css";
 
 const navItems = [
@@ -88,6 +89,8 @@ export default function Header() {
               {item.label}
             </a>
           ))}
+
+          <ThemeToggle />
 
           <a
             href="#contact"
