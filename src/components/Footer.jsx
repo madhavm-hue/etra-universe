@@ -43,7 +43,7 @@ export default function Footer() {
             <p className="footer-column-title">Our Worlds</p>
 
             <a
-              href="https://www.etradreams.com/"
+              href="https://vfx.etradreams.com/"
               target="_blank"
               rel="noopener noreferrer"
             >
