@@ -64,16 +64,12 @@ export default function Footer() {
           <div className="footer-column">
             <p className="footer-column-title">Connect</p>
 
-            <a href="mailto:contact@etrauniverse.com">
-              contact@etrauniverse.com
-            </a>
-
-            <a href="#" aria-label="ETRA Universe LinkedIn">
+            <a href="#" aria-label="ETRA Dreams LinkedIn">
               LinkedIn
               <FiArrowUpRight aria-hidden="true" />
             </a>
 
-            <a href="#" aria-label="ETRA Universe Instagram">
+            <a href="#" aria-label="ETRA Dreams Instagram">
               Instagram
               <FiArrowUpRight aria-hidden="true" />
             </a>

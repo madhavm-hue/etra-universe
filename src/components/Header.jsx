@@ -91,14 +91,6 @@ export default function Header() {
           ))}
 
           <ThemeToggle />
-
-          <a
-            href="#contact"
-            className="header-cta"
-            onClick={() => handleNavClick("contact")}
-          >
-            Let&apos;s Connect
-          </a>
         </nav>
 
         <button

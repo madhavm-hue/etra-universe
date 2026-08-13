@@ -1,4 +1,3 @@
-import { FiArrowUpRight, FiMail } from "react-icons/fi";
 import "../styles/contact.css";
 
 export default function ContactCTA() {
@@ -31,24 +30,6 @@ export default function ContactCTA() {
               animation or creative digital experiences, our team is ready
               to bring your ideas to life.
             </p>
-
-            <div className="contact-actions">
-              <a
-                href="mailto:contact@etrauniverse.com"
-                className="btn btn-primary"
-              >
-                <span>Let&apos;s Connect</span>
-                <FiArrowUpRight aria-hidden="true" />
-              </a>
-
-              <a
-                href="mailto:contact@etrauniverse.com"
-                className="contact-email"
-              >
-                <FiMail aria-hidden="true" />
-                <span>hello@etradreams.com</span>
-              </a>
-            </div>
           </div>
 
           <div className="contact-side" aria-hidden="true">

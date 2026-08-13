@@ -25,7 +25,6 @@
     color 0.35s ease;
 }
 
-
 html[data-theme="dark"] .universe-section {
   background:
     radial-gradient(
@@ -45,7 +44,6 @@ html[data-theme="dark"] .universe-section {
       #07071b 100%
     );
 }
-
 
 .universe-section::before {
   position: absolute;
@@ -67,12 +65,10 @@ html[data-theme="dark"] .universe-section {
   filter: blur(130px);
 }
 
-
 html[data-theme="dark"] .universe-section::before {
   opacity: 0.2;
   background: rgba(245, 0, 135, 0.38);
 }
-
 
 .universe-heading {
   position: relative;
@@ -90,7 +86,6 @@ html[data-theme="dark"] .universe-section::before {
   margin-bottom: clamp(48px, 7vw, 86px);
 }
 
-
 .universe-intro {
   max-width: 560px;
 
@@ -104,7 +99,6 @@ html[data-theme="dark"] .universe-section::before {
   transition: color 0.35s ease;
 }
 
-
 .world-grid {
   position: relative;
   z-index: 2;
@@ -114,7 +108,6 @@ html[data-theme="dark"] .universe-section::before {
 
   gap: clamp(18px, 2.4vw, 34px);
 }
-
 
 .world-card {
   position: relative;
@@ -146,7 +139,6 @@ html[data-theme="dark"] .universe-section::before {
     box-shadow var(--transition-medium);
 }
 
-
 html[data-theme="dark"] .world-card {
   border-color: rgba(255, 255, 255, 0.09);
 
@@ -154,7 +146,6 @@ html[data-theme="dark"] .world-card {
     0 30px 80px rgba(0, 0, 0, 0.34),
     inset 0 1px 0 rgba(255, 255, 255, 0.045);
 }
-
 
 .world-card::before {
   position: absolute;
@@ -175,7 +166,6 @@ html[data-theme="dark"] .world-card {
   );
 }
 
-
 .world-card:hover,
 .world-card:focus-visible {
   transform: translateY(-10px) scale(1.012);
@@ -190,7 +180,6 @@ html[data-theme="dark"] .world-card {
   outline: none;
 }
 
-
 html[data-theme="dark"] .world-card:hover,
 html[data-theme="dark"] .world-card:focus-visible {
   box-shadow:
@@ -198,7 +187,6 @@ html[data-theme="dark"] .world-card:focus-visible {
     0 0 42px rgba(245, 0, 135, 0.14),
     inset 0 1px 0 rgba(255, 255, 255, 0.07);
 }
-
 
 .dreams-card:hover,
 .dreams-card:focus-visible,
@@ -210,7 +198,6 @@ html[data-theme="dark"] .world-card:focus-visible {
     inset 0 1px 0 rgba(255, 255, 255, 0.07);
 }
 
-
 html[data-theme="dark"] .dreams-card:hover,
 html[data-theme="dark"] .dreams-card:focus-visible,
 html[data-theme="dark"] .gaming-card:hover,
@@ -220,7 +207,6 @@ html[data-theme="dark"] .gaming-card:focus-visible {
     0 0 48px rgba(245, 0, 135, 0.17),
     inset 0 1px 0 rgba(255, 255, 255, 0.07);
 }
-
 
 .world-card-bg {
   position: absolute;
@@ -240,7 +226,7 @@ html[data-theme="dark"] .gaming-card:focus-visible {
     filter 0.6s ease;
 }
 
-
+/* ETRA VFX - LEFT CARD */
 .dreams-card .world-card-bg {
   background:
     linear-gradient(
@@ -250,14 +236,14 @@ html[data-theme="dark"] .gaming-card:focus-visible {
       rgba(7, 3, 5, 0.66) 68%,
       rgba(4, 4, 6, 0.98) 100%
     ),
-    url("/images/etra-dreams.png");
+    url("/images/VFX_banner.jpeg");
 
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-
+/* ETRA GAMING & ANIMATIONS - RIGHT CARD */
 .gaming-card .world-card-bg {
   background:
     linear-gradient(
@@ -267,13 +253,12 @@ html[data-theme="dark"] .gaming-card:focus-visible {
       rgba(7, 3, 5, 0.66) 68%,
       rgba(4, 4, 6, 0.98) 100%
     ),
-    url("/images/etra-gaming.png");
+    url("/images/Anim_Gameing_banner.png");
 
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
-
 
 .world-card:hover .world-card-bg,
 .world-card:focus-visible .world-card-bg {
@@ -283,7 +268,6 @@ html[data-theme="dark"] .gaming-card:focus-visible {
     saturate(1.05)
     contrast(1.08);
 }
-
 
 .world-card-overlay {
   position: absolute;
@@ -304,7 +288,6 @@ html[data-theme="dark"] .gaming-card:focus-visible {
       transparent 55%
     );
 }
-
 
 .world-card::after {
   position: absolute;
@@ -332,13 +315,11 @@ html[data-theme="dark"] .gaming-card:focus-visible {
     transform 0.85s ease;
 }
 
-
 .world-card:hover::after,
 .world-card:focus-visible::after {
   opacity: 1;
   transform: translateX(38%);
 }
-
 
 .world-card-top {
   position: relative;
@@ -349,7 +330,6 @@ html[data-theme="dark"] .gaming-card:focus-visible {
   justify-content: space-between;
 }
 
-
 .world-number {
   color: rgba(255, 255, 255, 0.72);
 
@@ -358,7 +338,6 @@ html[data-theme="dark"] .gaming-card:focus-visible {
 
   letter-spacing: 0.2em;
 }
-
 
 .world-arrow {
   display: inline-flex;
@@ -390,7 +369,6 @@ html[data-theme="dark"] .gaming-card:focus-visible {
     background-color var(--transition-fast);
 }
 
-
 .world-card:hover .world-arrow,
 .world-card:focus-visible .world-arrow {
   color: #ffffff;
@@ -402,14 +380,12 @@ html[data-theme="dark"] .gaming-card:focus-visible {
   background: rgba(245, 0, 135, 0.16);
 }
 
-
 .world-card-content {
   position: relative;
   z-index: 2;
 
   max-width: 580px;
 }
-
 
 .world-category {
   display: inline-flex;
@@ -428,7 +404,6 @@ html[data-theme="dark"] .gaming-card:focus-visible {
   text-transform: uppercase;
 }
 
-
 .world-category::before {
   width: 26px;
   height: 1px;
@@ -440,7 +415,6 @@ html[data-theme="dark"] .gaming-card:focus-visible {
   box-shadow:
     0 0 12px rgba(245, 0, 135, 0.65);
 }
-
 
 .world-card h3,
 .gaming-card h3 {
@@ -464,7 +438,6 @@ html[data-theme="dark"] .gaming-card:focus-visible {
     0 18px 50px rgba(0, 0, 0, 0.35);
 }
 
-
 .world-description {
   max-width: 520px;
 
@@ -476,7 +449,6 @@ html[data-theme="dark"] .gaming-card:focus-visible {
   text-shadow:
     0 3px 14px rgba(0, 0, 0, 0.5);
 }
-
 
 .world-link {
   display: inline-flex;
@@ -498,24 +470,20 @@ html[data-theme="dark"] .gaming-card:focus-visible {
     color var(--transition-fast);
 }
 
-
 .world-link svg {
   transition:
     transform var(--transition-fast);
 }
-
 
 .world-card:hover .world-link,
 .world-card:focus-visible .world-link {
   color: #ffffff;
 }
 
-
 .world-card:hover .world-link svg,
 .world-card:focus-visible .world-link svg {
   transform: translate(4px, -4px);
 }
-
 
 @media (max-width: 900px) {
   .universe-heading {
@@ -523,43 +491,35 @@ html[data-theme="dark"] .gaming-card:focus-visible {
     gap: 26px;
   }
 
-
   .universe-intro {
     justify-self: start;
   }
-
 
   .world-card {
     min-height: 560px;
   }
 }
 
-
 @media (max-width: 760px) {
   .world-grid {
     grid-template-columns: 1fr;
   }
-
 
   .world-card {
     min-height: 520px;
   }
 }
 
-
 @media (max-width: 600px) {
   .universe-heading {
     margin-bottom: 40px;
   }
 
-
   .world-card {
     min-height: 460px;
     padding: 24px;
-
     border-radius: 20px;
   }
-
 
   .world-arrow {
     width: 40px;
@@ -568,27 +528,21 @@ html[data-theme="dark"] .gaming-card:focus-visible {
     font-size: 1.2rem;
   }
 
-
   .world-card h3,
   .gaming-card h3 {
-    font-size:
-      clamp(2.15rem, 10.5vw, 3.45rem);
-
+    font-size: clamp(2.15rem, 10.5vw, 3.45rem);
     line-height: 0.97;
   }
-
 
   .world-description {
     font-size: 0.95rem;
   }
 }
 
-
 @media (max-width: 380px) {
   .world-card {
     min-height: 430px;
   }
-
 
   .world-card h3,
   .gaming-card h3 {
@@ -596,18 +550,15 @@ html[data-theme="dark"] .gaming-card:focus-visible {
   }
 }
 
-
 @media (hover: none) {
   .world-card:hover {
     transform: none;
   }
 
-
   .world-card::after {
     display: none;
   }
 }
-
 
 @supports not (
   (backdrop-filter: blur(12px)) or
@@ -617,7 +568,6 @@ html[data-theme="dark"] .gaming-card:focus-visible {
     background: rgba(10, 10, 14, 0.9);
   }
 }
-
 
 @media (prefers-reduced-motion: reduce) {
   .world-card,

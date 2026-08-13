@@ -1,4 +1,3 @@
-import { FiArrowUpRight } from "react-icons/fi";
 import "../styles/about.css";
 
 const stats = [
@@ -25,41 +24,47 @@ export default function About() {
 
           <div className="about-visual-content">
             <span className="about-visual-label">
-  Welcome to ETRA World
-</span>
+              Welcome to ETRA World
+            </span>
 
             <h3>
-  Dream.
-  <span>Create. Inspire.</span>
-</h3>
+              Dream.
+              <span>Create. Inspire.</span>
+            </h3>
           </div>
 
-          <div className="about-orbit about-orbit-one" aria-hidden="true" />
-          <div className="about-orbit about-orbit-two" aria-hidden="true" />
+          <div
+            className="about-orbit about-orbit-one"
+            aria-hidden="true"
+          />
+          <div
+            className="about-orbit about-orbit-two"
+            aria-hidden="true"
+          />
         </div>
 
         <div className="about-content">
           <p className="section-label">
-  About ETRA Dreams
-</p>
+            About ETRA Dreams
+          </p>
 
-        <h2 className="about-title">
-  Turning
-  <span>Dreams Into Reality.</span>
-</h2>
+          <h2 className="about-title">
+            Turning
+            <span>Dreams Into Reality.</span>
+          </h2>
 
           <div className="about-copy">
             <p>
-    ETRA Dreams is a creative studio focused on transforming bold ideas into
-    immersive digital experiences through design, storytelling and innovation.
-  </p>
-
+              ETRA Dreams is a creative studio focused on transforming bold
+              ideas into immersive digital experiences through design,
+              storytelling and innovation.
+            </p>
 
             <p>
-    From visual effects and animation to gaming and interactive media, we
-    create experiences that inspire audiences and shape the future of digital
-    entertainment.
-  </p>
+              From visual effects and animation to gaming and interactive
+              media, we create experiences that inspire audiences and shape
+              the future of digital entertainment.
+            </p>
           </div>
 
           <div className="about-stats">
@@ -70,11 +75,6 @@ export default function About() {
               </div>
             ))}
           </div>
-
-          <a href="#contact" className="about-link">
-         Let&apos;s Build Together
-            <FiArrowUpRight aria-hidden="true" />
-          </a>
         </div>
       </div>
     </section>
