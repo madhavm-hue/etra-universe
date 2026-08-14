@@ -519,7 +519,7 @@ html[data-theme="dark"] .contact-title {
   text-transform: uppercase;
 }
 
-.contact-side span {
+.contact-side a {
   position: relative;
 
   padding: 9px 13px;
@@ -539,12 +539,21 @@ html[data-theme="dark"] .contact-title {
   -webkit-backdrop-filter: blur(12px);
 
   transition:
+    transform 0.3s ease,
     background-color 0.35s ease,
     border-color 0.35s ease,
-    color 0.35s ease;
+    color 0.35s ease,
+    box-shadow 0.35s ease;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--accent-primary);
+  text-decoration: none;
+  cursor: pointer;
 }
 
-.contact-side span::before {
+.contact-side a::before {
   position: absolute;
   top: 50%;
   left: -35%;
@@ -569,9 +578,32 @@ html[data-theme="dark"] .contact-title {
     opacity 0.55s ease;
 }
 
-.contact-side span:hover::before {
+.contact-side a:hover::before {
   left: 110%;
   opacity: 1;
+}
+
+
+.contact-side a:hover,
+.contact-side a:focus-visible {
+  transform: translateX(-5px);
+
+  border-color: rgba(245, 0, 135, 0.5);
+
+  color: var(--accent-primary);
+
+  box-shadow:
+    0 16px 34px var(--shadow-color),
+    0 0 24px rgba(245, 0, 135, 0.12),
+    inset 0 1px 0 rgba(255, 255, 255, 0.07);
+
+  outline: none;
+}
+
+
+.contact-side a:focus-visible {
+  outline: 2px solid var(--accent-primary);
+  outline-offset: 4px;
 }
 
 .contact-glow {
@@ -762,7 +794,7 @@ html[data-theme="dark"] .contact-glow-two {
   (backdrop-filter: blur(10px)) or
   (-webkit-backdrop-filter: blur(10px))
 ) {
-  .contact-side span {
+  .contact-side a {
     background: var(--background-soft);
   }
 }
@@ -772,6 +804,8 @@ html[data-theme="dark"] .contact-glow-two {
   .contact-actions .btn::before,
   .contact-actions .btn svg,
   .contact-email,
+  .contact-side a,
+  .contact-side a::before,
   .contact-glow {
     animation: none;
     transition: none;

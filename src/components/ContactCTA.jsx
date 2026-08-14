@@ -2,9 +2,11 @@ import "../styles/contact.css";
 
 export default function ContactCTA() {
   return (
-    <section className="contact-section section" id="contact">
+    <section className="contact-section">
       <div className="container">
-        <div className="contact-panel">
+        <div className="contact-card">
+
+          {/* BACKGROUND GLOWS */}
           <div
             className="contact-glow contact-glow-one"
             aria-hidden="true"
@@ -15,6 +17,7 @@ export default function ContactCTA() {
             aria-hidden="true"
           />
 
+          {/* CONTENT */}
           <div className="contact-content">
             <p className="section-label">
               Let&apos;s Connect
@@ -32,10 +35,27 @@ export default function ContactCTA() {
             </p>
           </div>
 
-          <div className="contact-side" aria-hidden="true">
-            <span>ETRA VFX</span>
-            <span>ETRA GAMING &amp; ANIMATIONS</span>
+          {/* RIGHT SIDE LINKS */}
+          <div className="contact-side">
+
+            <a
+              href="https://vfx.etradreams.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              ETRA VFX
+            </a>
+
+            <a
+              href="https://etra-gaming.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              ETRA GAMING &amp; ANIMATIONS
+            </a>
+
           </div>
+
         </div>
       </div>
     </section>
