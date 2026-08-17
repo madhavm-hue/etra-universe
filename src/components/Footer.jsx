@@ -1,13 +1,38 @@
+"use client";
+
 import { FiArrowUpRight } from "react-icons/fi";
 import Image from "next/image";
 import "../styles/footer.css";
 
-const currentYear = new Date().getFullYear();
-
 export default function Footer() {
+  const currentYear = new Date().getFullYear();
+
+  const handleBackToTop = (e) => {
+    e.preventDefault();
+
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: "smooth",
+    });
+
+    // URL-la #home irundha clean pannum
+    if (window.history.replaceState) {
+      window.history.replaceState(
+        null,
+        "",
+        window.location.pathname
+      );
+    }
+  };
+
   return (
     <footer className="site-footer">
       <div className="container footer-inner">
+
+        {/* =========================
+            FOOTER TOP
+        ========================= */}
         <div className="footer-top">
           <a
             href="#home"
@@ -29,18 +54,39 @@ export default function Footer() {
           </p>
         </div>
 
+        {/* =========================
+            FOOTER LINKS
+        ========================= */}
         <div className="footer-links-grid">
-          <div className="footer-column">
-            <p className="footer-column-title">Explore</p>
 
-            <a href="#home">Home</a>
-            <a href="#universe">Our Universe</a>
-            <a href="#about">About</a>
-            <a href="#contact">Contact</a>
+          {/* EXPLORE */}
+          <div className="footer-column">
+            <p className="footer-column-title">
+              Explore
+            </p>
+
+            <a href="#home">
+              Home
+            </a>
+
+            <a href="#universe">
+              Our Universe
+            </a>
+
+            <a href="#about">
+              About
+            </a>
+
+            <a href="#contact">
+              Contact
+            </a>
           </div>
 
+          {/* OUR WORLDS */}
           <div className="footer-column">
-            <p className="footer-column-title">Our Worlds</p>
+            <p className="footer-column-title">
+              Our Worlds
+            </p>
 
             <a
               href="https://vfx.etradreams.com/"
@@ -61,29 +107,52 @@ export default function Footer() {
             </a>
           </div>
 
+          {/* CONNECT */}
           <div className="footer-column">
-            <p className="footer-column-title">Connect</p>
+            <p className="footer-column-title">
+              Connect
+            </p>
 
-            <a href="#" aria-label="ETRA Dreams LinkedIn">
+            <a
+              href="#"
+              aria-label="ETRA Dreams LinkedIn"
+            >
               LinkedIn
               <FiArrowUpRight aria-hidden="true" />
             </a>
 
-            <a href="#" aria-label="ETRA Dreams Instagram">
+            <a
+              href="#"
+              aria-label="ETRA Dreams Instagram"
+            >
               Instagram
               <FiArrowUpRight aria-hidden="true" />
             </a>
           </div>
+
         </div>
 
+        {/* =========================
+            FOOTER BOTTOM
+        ========================= */}
         <div className="footer-bottom">
-          <p>© {currentYear} ETRA Dreams. All Rights Reserved.</p>
+          <p>
+            © {currentYear} ETRA Dreams. All Rights Reserved.
+          </p>
 
-          <a href="#home" className="footer-back-top">
+          <a
+            href="#"
+            className="footer-back-top"
+            onClick={handleBackToTop}
+            aria-label="Back to top"
+          >
             Back to Top
-            <span aria-hidden="true">↑</span>
+            <span aria-hidden="true">
+              ↑
+            </span>
           </a>
         </div>
+
       </div>
     </footer>
   );
