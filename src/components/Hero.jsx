@@ -3,6 +3,32 @@ import "../styles/hero.css";
 export default function Hero() {
   return (
     <section className="hero">
+
+      {/* Background effect */}
+      <div className="hero-bg" aria-hidden="true" />
+
+      {/* Bubble / orbit effects */}
+      <div
+        className="hero-orbit hero-orbit-one"
+        aria-hidden="true"
+      />
+
+      <div
+        className="hero-orbit hero-orbit-two"
+        aria-hidden="true"
+      />
+
+      {/* Glow effects */}
+      <div
+        className="hero-glow hero-glow-one"
+        aria-hidden="true"
+      />
+
+      <div
+        className="hero-glow hero-glow-two"
+        aria-hidden="true"
+      />
+
       <div className="container hero-inner">
 
         <div className="hero-content">
@@ -21,9 +47,7 @@ export default function Hero() {
           </p>
         </div>
 
-        {/* RIGHT SIDE LINKS */}
         <div className="hero-meta">
-
           <a
             href="https://vfx.etradreams.com/"
             target="_blank"
@@ -39,7 +63,6 @@ export default function Hero() {
           >
             ETRA Gaming
           </a>
-
         </div>
 
       </div>
