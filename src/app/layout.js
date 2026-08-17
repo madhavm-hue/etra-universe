@@ -52,13 +52,13 @@ export const metadata = {
     siteName: "ETRA Dreams",
 
     images: [
-      {
-        url: "/images/VFX_banner.jpeg",
-        width: 1200,
-        height: 630,
-        alt: "ETRA Dreams – VFX, Animation and Gaming",
-      },
-    ],
+  {
+    url: "https://etra-universe.vercel.app/images/VFX_banner.jpeg",
+    width: 1200,
+    height: 630,
+    alt: "ETRA Dreams – VFX, Animation and Gaming",
+  },
+],
 
     locale: "en_US",
     type: "website",
@@ -72,7 +72,7 @@ export const metadata = {
     description:
       "Explore ETRA Dreams — visual effects, animation, gaming, CGI and immersive digital experiences.",
 
-    images: ["/images/VFX_banner.jpeg"],
+    images: ["https://etra-universe.vercel.app/images/VFX_banner.jpeg"],
   },
 };
 
