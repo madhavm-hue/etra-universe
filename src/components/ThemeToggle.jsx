@@ -8,7 +8,9 @@ export default function ThemeToggle() {
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
-    const savedTheme = localStorage.getItem("etra-universe-theme");
+    const savedTheme = localStorage.getItem(
+      "etra-universe-theme"
+    );
 
     const preferredTheme =
       savedTheme ||
@@ -21,7 +23,6 @@ export default function ThemeToggle() {
       preferredTheme
     );
 
-    // Restore saved/system theme after component mounts
     // eslint-disable-next-line react-hooks/set-state-in-effect
     setTheme(preferredTheme);
 
@@ -30,7 +31,8 @@ export default function ThemeToggle() {
   }, []);
 
   const toggleTheme = () => {
-    const nextTheme = theme === "light" ? "dark" : "light";
+    const nextTheme =
+      theme === "light" ? "dark" : "light";
 
     setTheme(nextTheme);
 
@@ -46,27 +48,39 @@ export default function ThemeToggle() {
   };
 
   if (!mounted) {
-    return <div className="theme-toggle-placeholder" />;
+    return (
+      <div className="theme-toggle-placeholder" />
+    );
   }
+
+  /*
+    IMPORTANT:
+    Button shows the mode the user can switch TO.
+
+    Dark page  -> ☀️ Light
+    Light page -> 🌙 Dark
+  */
+
+  const nextTheme =
+    theme === "dark" ? "light" : "dark";
 
   return (
     <button
       type="button"
       className="theme-toggle"
       onClick={toggleTheme}
-      aria-label={`Switch to ${
-        theme === "light" ? "dark" : "light"
-      } mode`}
-      title={`Switch to ${
-        theme === "light" ? "dark" : "light"
-      } mode`}
+      aria-label={`Switch to ${nextTheme} mode`}
+      title={`Switch to ${nextTheme} mode`}
     >
-      <span className="theme-toggle-icon">
-        {theme === "light" ? "☀️" : "🌙"}
+      <span
+        className="theme-toggle-icon"
+        aria-hidden="true"
+      >
+        {theme === "dark" ? "☀️" : "🌙"}
       </span>
 
       <span className="theme-toggle-label">
-        {theme === "light" ? "Light" : "Dark"}
+        {theme === "dark" ? "Light" : "Dark"}
       </span>
     </button>
   );
