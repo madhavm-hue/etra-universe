@@ -12,12 +12,16 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata = {
-  title: "ETRA Universe | One Universe. Infinite Creativity.",
+  metadataBase: new URL("https://etradreams.com"),
+
+  title: "ETRA Dreams | One Universe. Infinite Creativity.",
+
   description:
-    "ETRA Universe brings together ETRA Dreams and ETRA Gaming under one creative ecosystem, delivering visual effects, animation, gaming, CGI and immersive digital experiences.",
+    "ETRA Dreams brings together visual effects, animation, gaming, CGI and immersive digital experiences under one creative ecosystem.",
+
   keywords: [
-    "ETRA Universe",
     "ETRA Dreams",
+    "ETRA VFX",
     "ETRA Gaming",
     "Visual Effects",
     "Animation",
@@ -25,6 +29,51 @@ export const metadata = {
     "CGI",
     "Interactive Experiences",
   ],
+
+  icons: {
+    icon: [
+      {
+        url: "/images/etra-dreams-favicon.png",
+        type: "image/png",
+      },
+    ],
+    shortcut: "/images/etra-dreams-favicon.png",
+    apple: "/images/etra-dreams-favicon.png",
+  },
+
+  openGraph: {
+    title: "ETRA Dreams | One Universe. Infinite Creativity.",
+
+    description:
+      "Explore ETRA Dreams — creating visual effects, animation, gaming, CGI and immersive digital experiences.",
+
+    url: "https://etradreams.com",
+
+    siteName: "ETRA Dreams",
+
+    images: [
+      {
+        url: "/images/VFX_banner.jpeg",
+        width: 1200,
+        height: 630,
+        alt: "ETRA Dreams – VFX, Animation and Gaming",
+      },
+    ],
+
+    locale: "en_US",
+    type: "website",
+  },
+
+  twitter: {
+    card: "summary_large_image",
+
+    title: "ETRA Dreams | One Universe. Infinite Creativity.",
+
+    description:
+      "Explore ETRA Dreams — visual effects, animation, gaming, CGI and immersive digital experiences.",
+
+    images: ["/images/VFX_banner.jpeg"],
+  },
 };
 
 export default function RootLayout({ children }) {
