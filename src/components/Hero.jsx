@@ -57,7 +57,7 @@ export default function Hero() {
           </a>
 
           <a
-            href="https://etra-gaming.vercel.app/"
+            href="https://creative.etradreams.com/"
             target="_blank"
             rel="noopener noreferrer"
           >

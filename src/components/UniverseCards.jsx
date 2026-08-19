@@ -17,7 +17,7 @@ const worlds = [
     category: "Games • Animation • Interactive Experiences",
     description:
       "Building immersive games, animation, CGI and interactive digital experiences that push imagination beyond limits.",
-    link: "https://etra-gaming.vercel.app/",
+    link: "https://creative.etradreams.com/",
     className: "gaming-card",
   },
 ];
@@ -54,6 +54,7 @@ export default function UniverseCards() {
 
               <div className="world-card-top">
                 <span className="world-number">{world.id}</span>
+
                 <FiArrowUpRight
                   className="world-arrow"
                   aria-hidden="true"
